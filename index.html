@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>NHST Demo Store</title>
+    <style>
+        body { font-family: sans-serif; padding: 50px; text-align: center; }
+        .login-box { border: 1px solid #ccc; padding: 20px; display: inline-block; border-radius: 8px; }
+        input { display: block; margin: 10px auto; padding: 8px; }
+        button { background: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        #welcome-msg { margin-top: 20px; color: blue; display: none; }
+    </style>
+</head>
 <body>
-  <h1>DN media Demo Site</h1>
-  <p>Status: Online</p>
+    <h1>Cefalo Demo Dashboard</h1>
+    <div class="login-box">
+        <h3>Client Login</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-button" onclick="document.getElementById('welcome-msg').style.display='block'">Login</button>
+    </div>
+    <div id="welcome-msg">Login Successful! Welcome to the portal.</div>
 </body>
 </html>
